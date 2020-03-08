@@ -12,28 +12,29 @@
     <div class="container">
         <h1>Formulários</h1>
         <form>
-
-            <div class="form-group">
-                <label>Digite o nome do usuário</label>
-                <input type="text" class="form-control" placeholder="Insira um texto aqui">
-            </div>
-
-            <div class="form-group">
-                <label>Digite a senha</label>
-                <input type="password" class="form-control" placeholder="Digite a senha aqui">
-            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Digite o nome do usuário</label>
+                        <input type="text" class="form-control" placeholder="Insira um texto aqui">
+                    </div>
+                </div>
                 
-            
-            <div class="form-group">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                </select>
+                <div class="col">
+                    <div class="form-group">
+                        <label>Digite a senha</label>
+                        <input type="password" class="form-control" placeholder="Digite a senha aqui">
+                    </div>
+                </div>
             </div>
 
-            <input type="file" class="form-control">
-            <input type="submit" name="enviar" value="Enviar" class="btn btn-primary">
+            <div class="form-group">
+                <input type="range" class="form-control-range">
+                <input type="checkbox" class="form-check-input" checked>
+                <label>Clique aqui</label>
+            </div>
+                                       
+            <input type="submit" name="enviar" value="Enviar" class="btn btn-primary btn-block">
         </form>
 
     </div>

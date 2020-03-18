@@ -1,0 +1,23 @@
+header {
+    grid-area: input;
+    box-shadow: 10px 20px 30px -12px #ccc; 
+    background-image: url("img/Imagem_header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px 0 30px 0;
+}
+
+footer {
+    padding: 5px 0;
+}
+
+#sugestoes {
+    background-color: #6e6e9b;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #6e6e9b;
+}
+

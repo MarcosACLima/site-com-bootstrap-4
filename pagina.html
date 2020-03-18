@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang=pt_br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Alfa</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Folha de estilo pessoal -->
+    <link rel="stylesheet" href="css/">
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="img/favicon.png" rel="icon">
+</head>
+<body>
+    <!--  inicio menu -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+        <!-- Logo -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/new_logo.svg">
+            </a>
+            <!-- Botao menu para mobile -->
+            <button class="navbar-toggler" data-toggle="colapse" data-target="#menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-md-auto text-light">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim menu -->
+    
+    <!-- Inicio do header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12 text-light jumbotron bg-transparent">
+                    <span class="btn btn-success btn-sm">À partir de R$21,99</span>
+                    <h1>Cursos de alta qualidade e custo baixo</h1>
+                    <p class="text-dark">Proin laoreet rutrum ullamcorper. Integer condimentum risus sit amet ipsum aliquet, et posuere nisi imperdiet. Morbi sed sollicitudin neque. Suspendisse sit amet lacus sit amet nibh ullamcorper elementum. Morbi semper bibendum sapien vel auctor. In cursus ornare malesuada. Pellentesque eu pharetra risus. Phasellus efficitur vel orci nec sollicitudin. Vivamus mattis dapibus dolor et commodo. Duis arcu ipsum, fermentum sit amet convallis at, molestie vel dolor. Ut iaculis nec orci non sollicitudin.</p>
+                    <a class="btn btn-dark btn-lg" href="#cursos">Conheça nossos cursos</a>
+                </div>
+
+                <!-- Carrosel -->
+                <div class="col-lg-7 col-12">
+                    <div id="img-home" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#img-home" data-slide-to="0" class="active"></li>
+                            <li data-target="#img-home" data-slide-to="1"></li>
+                            <li data-target="#img-home" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <!-- Imagem 01 -->
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="img/01.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">Seleção de cursos por R$29,99</h5>
+                                    <a href="#course" class="text-light">Java | Python | Javascript</a>
+                                </div>
+                            </div>
+                            <!-- Imagem 02 -->
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="img/02.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">O mais procurado</h5>
+                                    <a href="#course" class="text-light">Todo dia novidades</a>
+                                </div>
+                            </div>
+                            <!-- Imagem 03 -->
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="img/03.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">Promoção de cursos por R$21,99</h5>
+                                    <a href="#course" class="text-light">Preço irresistível</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- Fim Header -->
+
+    <!-- Inicio Cursos -->
+    <div id="cursos" class="container">
+        <div class="row">
+            <!-- Card 01 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+                <div class="card">
+                    <img src="img/visualizacao_python_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Data Science: Visualização de Dados
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </h5>
+                        <p style="font-size: 10px; color:#AAA">
+                            <i class="fas fa-play-circle"> </i> 
+                            24 aulas | <i class="fas fa-clock"></i>
+                            1 hora | <i class="fas fa-sitemap"></i>
+                            Intermediário
+                        </p>
+                        <p class="card-text">Aprenda a construir visualizações de dados usando a linguagem de programação Python</p>
+                        <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Fim Card 01 -->
+            <!-- Card 02 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+                <div class="card">
+                    <img src="img/jquery_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Introdução ao framework JQuery
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </h5>
+                        <p style="font-size: 10px; color:#AAA">
+                            <i class="fas fa-play-circle"> </i> 
+                            15 aulas | <i class="fas fa-clock"></i>
+                            2 horas | <i class="fas fa-sitemap"></i>
+                            Iniciante
+                        </p>
+                        <p class="card-text">Construa suas primeiras aplicações web usando JavaScript e o framework JQuery</p>
+                        <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Fim Card 02 -->
+            <!-- Card 03 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+                <div class="card">
+                    <img src="img/php_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Introdução a Criação de Sites com PHP
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half text-warning"></i>
+                        </h5>
+                        <p style="font-size: 10px; color:#AAA">
+                            <i class="fas fa-play-circle"> </i> 
+                            17 aulas | <i class="fas fa-clock"></i>
+                            1.5 hora | <i class="fas fa-sitemap"></i>
+                            Iniciante
+                        </p>
+                        <p class="card-text">Aprenda a linguagem de programação PHP e comece a construir seus primeiros sites dinâmicos</p>
+                        <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Fim Card 03 -->
+            <!-- Card 04 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">GRATUITO</div>
+                <div class="card">
+                    <img src="img/css_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Introdução à linguagem CSS
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </h5>
+                        <p style="font-size: 10px; color:#AAA">
+                            <i class="fas fa-play-circle"> </i> 
+                            20 aulas | <i class="fas fa-clock"></i>
+                            1.5 hora | <i class="fas fa-sitemap"></i>
+                            Iniciante
+                        </p>
+                        <p class="card-text">Aprenda os conceitos básicos da linguagem de estilos CSS e construa páginas mais elegantes</p>
+                        <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Fim Card 04 -->
+        </div>
+    </div>
+    <!-- Fim Cursos -->
+
+    <!-- Rodapé -->
+    <footer class="text-light text-center bg-dark">
+        <p>Desenvolvido por <a href="#">MaXSite.</a> Copyright 2020.</p>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

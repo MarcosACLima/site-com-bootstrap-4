@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css//bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Popovers</h1>
+        <br><br><br>
+        <button class="btn btn-primary btn-lg" title="Titulo do popover" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover no topo" data-placement="top">Meu popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover a direita" >Meu popover</button>
+        <!-- ou -->
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover a direita" data-placement="right">Meu popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover a esquerda" data-placement="left">Meu popover</button>
+
+        <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover em baixo" data-placement="bottom">Meu popover</button>
+    </div>
+
+    <footer>
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Função para ativar popover -->
+        <script>
+            $(function(){
+                $('[data-toggle="popover"').popover()
+            });
+        </script>
+    </footer>
+</body>
+</html>

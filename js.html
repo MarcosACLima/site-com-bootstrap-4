@@ -25,6 +25,20 @@
         <button class="btn btn-primary btn-lg" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover em baixo" data-placement="bottom">Meu popover</button>
     </div>
 
+    <br><br>
+
+    <div class="container">
+        <h1>Tooltips</h1>
+        <br>
+        <button class="btn btn-success btn-lg" data-toggle="tooltip" title="Aqui é o titulo do meu tooltip" data-placement="bottom">Tooltip</button>
+
+        <button class="btn btn-danger btn-lg" data-toggle="tooltip" title="Aqui é o titulo do meu tooltip" data-placement="left">Tooltip</button>
+
+        <button class="btn btn-warning btn-lg" data-toggle="tooltip" title="Aqui é o titulo do meu tooltip" data-placement="top">Tooltip</button>
+
+        <button class="btn btn-info btn-lg" data-toggle="tooltip" title="Aqui é o titulo do meu tooltip" data-placement="right">Tooltip</button>
+    </div>
+
     <footer>
         <!-- JS -->
         <script src="js/jquery.js"></script>
@@ -33,6 +47,12 @@
         <script>
             $(function(){
                 $('[data-toggle="popover"').popover()
+            });
+        </script>
+        <!-- Tooltip -->
+        <script type="text/javascript">
+            $(function() {
+                $('[data-toggle="tooltip"]').tooltip()
             });
         </script>
     </footer>

@@ -44,10 +44,15 @@
     <div class="container">
         <h1>Modal</h1>
 
-        <button class="btn btn-secondary" data-toggle="modal" data-target="#conteudoModal">Ativar Modal</button>
+        <button class="btn btn-secondary" data-nome="Modal1" data-toggle="modal" data-target="#conteudoModal">Ativar Modal 1</button>
+
+        <button class="btn btn-dark" data-nome="Modal2"  data-toggle="modal" data-target="#conteudoModal">Ativar Modal 2</button>
+
+        <button class="btn btn-warning" data-nome="Rocket"  data-toggle="modal" data-target="#conteudoModal">Mensagem para a Rocket</button>
 
         <div id="conteudoModal" class="modal fade">
-            <div class="modal-dialog">
+            <!-- Centralizar modal: modal-dialog-centered, tamanho do modal modal-lg-->
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <!-- Título -->
                     <div class="modal-header">
@@ -59,7 +64,34 @@
 
                     <!-- Conteúdo -->
                     <div class="modal-body">
-                        Texto do meu modal.
+                        <div class="row">
+                            <div class="col-6" style="background-color: rgb(249, 253, 21);">
+                                Texto do meu modal part 1.
+                            </div>
+                            <div class="col-6">
+                                Texto do meu modal part 2.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <span>Destinatário: </span>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" name="para" class="form-control">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4">
+                                <span>Mensagem: </span>
+                            </div>
+                            <div class="col-8">
+                                <textarea class="form-control" cols="30" rows="5"></textarea>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Rodapé -->
@@ -87,6 +119,16 @@
         <script type="text/javascript">
             $(function() {
                 $('[data-toggle="tooltip"]').tooltip()
+            });
+        </script>
+        <!-- Modal dinamico -->
+        <script type="text/javascript">
+            $('#conteudoModal').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget);
+                var recipient = button.data('nome');
+                var modal = $(this);
+                modal.find('.modal-title').text('Mensagem para: ' + recipient);
+                modal.find('.modal-body input').val(recipient);
             });
         </script>
     </footer>

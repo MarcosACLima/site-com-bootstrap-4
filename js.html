@@ -176,30 +176,53 @@
 
         <div class="container" style="background-color: rgb(58, 54, 54);">
             <h1 class="text-light">Carrosel</h1>
-            <div id="slideshow" class="carousel slide" data-ride="carousel">
+            <div id="slideshow" class="carousel slide carousel-fade" data-ride="carousel" style="text-align: center;">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1" ></li>
+                    <li data-target="#slideshow" data-slide-to="2" ></li>
+                </ol>
+                <!-- Conteúdo do carousel -->
                 <div class="carousel-inner">
                     <!-- Imagem 1 -->
                     <div class="carousel-item active">
-                        <img src="img/natureza1.jpg" >
+                        <img src="img/natureza1.jpg" alt="Imagem da natureza de uma ponte sobre o rio" style="max-height: 500px;">
+                        <!-- Legenda -->
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Natureza 1</h5>
+                            <p>Ponte sobre o rio</p>
+                        </div>
                     </div>
-
                      <!-- Imagem 2 -->
                      <div class="carousel-item">
-                        <img src="img/natureza2.jpg" >
+                        <img src="img/natureza2.jpg" alt="Floresta no outono" style="max-height: 500px;">
+                        <!-- Legenda -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Natureza 2</h5>
+                            <p>Tarde de outono</p>
+                        </div>
                     </div>
-
                      <!-- Imagem 3 -->
                      <div class="carousel-item">
-                        <img src="img/natureza3.jpg" >
+                        <img src="img/natureza3.jpg" alt="Nascer do sol" style="max-height: 500px;">
+                        <!-- Legenda -->
+                        <div class="carousel-caption d-none d-md-block">
+                           <h5>Natureza 3</h5>
+                           <p>Nascer do sol</p>
+                       </div>
                     </div>
                 </div>
                 <!-- Voltar slide -->
                 <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
+                    <!-- Acessibilidade -->
+                    <span class="sr-only">Anterior</span>
                 </a>
                 <!-- Avançar slide -->
                 <a class="carousel-control-next" href="#slideshow" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Posterior</span>
                 </a>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JavaScript</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css//bootstrap.min.css">
@@ -105,6 +105,78 @@
 
     </div>
 
+    <br><br>
+
+    <!-- Collapse -->
+    <div class="container">
+        <h1>Collapse</h1>
+        <a class="btn btn-warning" data-toggle="collapse" href="#secreto">Mostrar mais</a>
+
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#secreto"">Mostrar mais</button>
+
+        <input type="button" class="btn btn-info" data-toggle="collapse" data-target="#secreto" value="Mostrar mais">
+
+        <div class="collapse" id="secreto">
+            Mensagem secreta.
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Scrollspy -->
+    <div class="container">
+        <h1>Scrollspy</h1>
+
+        <div class="row">
+            <div class="col-4">
+                <div id="livro" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#c1">Capítulo 1</a>
+                    <a class="list-group-item list-group-item-action" href="#c2">Capítulo 2</a>
+                    <a class="list-group-item list-group-item-action" href="#c3">Capítulo 3</a>
+                    <a class="list-group-item list-group-item-action" href="#c4">Capítulo 4</a>
+                    <a class="list-group-item list-group-item-action" href="#c5">Capítulo 5</a>
+                </div>
+            </div>
+
+            <div class="col-8" id="caixaLivro" style="position: relative; height: 500px; overflow: auto;">
+
+                <div data-spy="scroll" data-target="#livro" data-offset="0">
+                    <h3 id="c1">Capítulo 1</h3>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec fringilla nulla. Mauris auctor fringilla urna, in mattis ligula faucibus eget. Curabitur tincidunt tempus sapien eu dignissim. Cras augue ipsum, dapibus aliquet condimentum quis, aliquet at orci. Sed nunc lectus, vestibulum quis cursus ac, congue eget orci. Phasellus sit amet ornare tortor. Aliquam lacinia turpis non blandit pellentesque. Nullam quam risus, placerat vel mollis aliquam, laoreet vel urna. Nullam sit amet tortor ornare, elementum massa a, aliquet elit. Nulla nibh magna, euismod placerat magna sit amet, venenatis bibendum sapien. Maecenas turpis erat, dapibus vitae arcu vitae, porta accumsan mi.
+                    </p>
+        
+                    <h3 id="c2">Capítulo 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec fringilla nulla. Mauris auctor fringilla urna, in mattis ligula faucibus eget. Curabitur tincidunt tempus sapien eu dignissim. Cras augue ipsum, dapibus aliquet condimentum quis, aliquet at orci. Sed nunc lectus, vestibulum quis cursus ac, congue eget orci. Phasellus sit amet ornare tortor. Aliquam lacinia turpis non blandit pellentesque. Nullam quam risus, placerat vel mollis aliquam, laoreet vel urna. Nullam sit amet tortor ornare, elementum massa a, aliquet elit. Nulla nibh magna, euismod placerat magna sit amet, venenatis bibendum sapien. Maecenas turpis erat, dapibus vitae arcu vitae, porta accumsan mi.
+                    </p>
+        
+                    <h3 id="c3">Capítulo 3</h3>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec fringilla nulla. Mauris auctor fringilla urna, in mattis ligula faucibus eget. Curabitur tincidunt tempus sapien eu dignissim. Cras augue ipsum, dapibus aliquet condimentum quis, aliquet at orci. Sed nunc lectus, vestibulum quis cursus ac, congue eget orci. Phasellus sit amet ornare tortor. Aliquam lacinia turpis non blandit pellentesque. Nullam quam risus, placerat vel mollis aliquam, laoreet vel urna. Nullam sit amet tortor ornare, elementum massa a, aliquet elit. Nulla nibh magna, euismod placerat magna sit amet, venenatis bibendum sapien. Maecenas turpis erat, dapibus vitae arcu vitae, porta accumsan mi.
+                    </p>
+        
+                    <h3 id="c4">Capítulo 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec fringilla nulla. Mauris auctor fringilla urna, in mattis ligula faucibus eget. Curabitur tincidunt tempus sapien eu dignissim. Cras augue ipsum, dapibus aliquet condimentum quis, aliquet at orci. Sed nunc lectus, vestibulum quis cursus ac, congue eget orci. Phasellus sit amet ornare tortor. Aliquam lacinia turpis non blandit pellentesque. Nullam quam risus, placerat vel mollis aliquam, laoreet vel urna. Nullam sit amet tortor ornare, elementum massa a, aliquet elit. Nulla nibh magna, euismod placerat magna sit amet, venenatis bibendum sapien. Maecenas turpis erat, dapibus vitae arcu vitae, porta accumsan mi.
+                   
+                        Nunc malesuada neque pretium lorem consequat pulvinar. Phasellus cursus vulputate tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed commodo lectus nec nisi condimentum blandit. Phasellus semper pretium tortor, nec luctus elit condimentum ut. Vestibulum ut tristique urna. Morbi dui nulla, scelerisque vulputate nibh vel, sollicitudin cursus augue. Proin eget pulvinar lorem, eu pharetra turpis. Sed eu egestas enim.
+                    </p>
+                            
+                    <h3 id="c5">Capítulo 5</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec fringilla nulla. Mauris auctor fringilla urna, in mattis ligula faucibus eget. Curabitur tincidunt tempus sapien eu dignissim. Cras augue ipsum, dapibus aliquet condimentum quis, aliquet at orci. Sed nunc lectus, vestibulum quis cursus ac, congue eget orci. Phasellus sit amet ornare tortor. Aliquam lacinia turpis non blandit pellentesque. Nullam quam risus, placerat vel mollis aliquam, laoreet vel urna. Nullam sit amet tortor ornare, elementum massa a, aliquet elit. Nulla nibh magna, euismod placerat magna sit amet, venenatis bibendum sapien. Maecenas turpis erat, dapibus vitae arcu vitae, porta accumsan mi.
+                   
+                        Etiam accumsan nec justo et mattis. Phasellus hendrerit blandit risus eget interdum. Phasellus laoreet arcu ac purus aliquet placerat. Duis scelerisque egestas eros et placerat. Aenean efficitur mollis pretium. Cras ac rutrum nunc. Nulla iaculis, mi vel dictum consectetur, magna enim blandit sapien, quis gravida libero metus eget tellus.
+                    </p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
     <footer>
         <!-- JS -->
         <script src="js/jquery.js"></script>
@@ -130,6 +202,10 @@
                 modal.find('.modal-title').text('Mensagem para: ' + recipient);
                 modal.find('.modal-body input').val(recipient);
             });
+        </script>
+        <!-- Scrollspy -->
+        <script type="text/javascript">
+            $('#caixaLivro').scrollspy({ target: '#livro'})
         </script>
     </footer>
 </body>

@@ -1,6 +1,8 @@
 /* Folha de estilo */
 #secao_1 {
-    height: 1000px;
+    height: 800px;
     background-color: #000;
     background-image: url('../img/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }

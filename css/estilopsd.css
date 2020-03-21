@@ -1,0 +1,6 @@
+/* Folha de estilo */
+#secao_1 {
+    height: 1000px;
+    background-color: #000;
+    background-image: url('../img/bg.png');
+}

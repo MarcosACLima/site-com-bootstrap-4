@@ -22,3 +22,11 @@ section {
 footer {
     padding: 50px;
 }
+
+#secao_5 {
+    height: 680px;
+    padding-top: 150px;
+    background-image: url('../img/3.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
